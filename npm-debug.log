@@ -1,0 +1,717 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', '-g', 'pm2' ]
+2 info using npm@2.1.6
+3 info using node@v0.10.33
+4 silly cache add args [ 'pm2', null ]
+5 verbose cache add spec pm2
+6 silly cache add parsed spec { raw: 'pm2',
+6 silly cache add   scope: null,
+6 silly cache add   name: 'pm2',
+6 silly cache add   rawSpec: '',
+6 silly cache add   spec: '*',
+6 silly cache add   type: 'range' }
+7 verbose addNamed pm2@*
+8 silly addNamed semver.valid null
+9 silly addNamed semver.validRange *
+10 silly addNameRange { name: 'pm2', range: '*', hasData: false }
+11 verbose mapToRegistry name pm2
+12 verbose mapToRegistry uri https://registry.npmjs.org/pm2
+13 verbose addNameRange registry:https://registry.npmjs.org/pm2 not in flight; fetching
+14 verbose registry.get https://registry.npmjs.org/pm2 not expired, no request
+15 silly addNameRange number 2 { name: 'pm2', range: '*', hasData: true }
+16 silly addNameRange versions [ 'pm2',
+16 silly addNameRange   [ '0.4.0',
+16 silly addNameRange     '0.4.1',
+16 silly addNameRange     '0.4.2',
+16 silly addNameRange     '0.4.3',
+16 silly addNameRange     '0.4.4',
+16 silly addNameRange     '0.4.5',
+16 silly addNameRange     '0.4.6',
+16 silly addNameRange     '0.4.7',
+16 silly addNameRange     '0.4.8',
+16 silly addNameRange     '0.4.10',
+16 silly addNameRange     '0.4.11',
+16 silly addNameRange     '0.4.12',
+16 silly addNameRange     '0.4.13',
+16 silly addNameRange     '0.4.14',
+16 silly addNameRange     '0.5.0',
+16 silly addNameRange     '0.5.1',
+16 silly addNameRange     '0.5.2',
+16 silly addNameRange     '0.5.3',
+16 silly addNameRange     '0.5.4',
+16 silly addNameRange     '0.5.5',
+16 silly addNameRange     '0.5.6',
+16 silly addNameRange     '0.5.7',
+16 silly addNameRange     '0.6.2',
+16 silly addNameRange     '0.6.3',
+16 silly addNameRange     '0.6.4',
+16 silly addNameRange     '0.6.5',
+16 silly addNameRange     '0.6.6',
+16 silly addNameRange     '0.6.7',
+16 silly addNameRange     '0.6.8',
+16 silly addNameRange     '0.6.9',
+16 silly addNameRange     '0.6.10',
+16 silly addNameRange     '0.6.11',
+16 silly addNameRange     '0.6.12',
+16 silly addNameRange     '0.6.13',
+16 silly addNameRange     '0.6.14',
+16 silly addNameRange     '0.6.15',
+16 silly addNameRange     '0.7.0',
+16 silly addNameRange     '0.7.1',
+16 silly addNameRange     '0.7.2',
+16 silly addNameRange     '0.7.3',
+16 silly addNameRange     '0.7.4',
+16 silly addNameRange     '0.7.5',
+16 silly addNameRange     '0.7.6',
+16 silly addNameRange     '0.7.7',
+16 silly addNameRange     '0.7.8',
+16 silly addNameRange     '0.8.0',
+16 silly addNameRange     '0.8.1',
+16 silly addNameRange     '0.8.2',
+16 silly addNameRange     '0.8.3',
+16 silly addNameRange     '0.8.4',
+16 silly addNameRange     '0.8.5',
+16 silly addNameRange     '0.8.6',
+16 silly addNameRange     '0.8.7',
+16 silly addNameRange     '0.8.8',
+16 silly addNameRange     '0.8.9',
+16 silly addNameRange     '0.8.10',
+16 silly addNameRange     '0.8.11',
+16 silly addNameRange     '0.8.12',
+16 silly addNameRange     '0.8.13',
+16 silly addNameRange     '0.8.14',
+16 silly addNameRange     '0.8.15',
+16 silly addNameRange     '0.9.0',
+16 silly addNameRange     '0.9.1',
+16 silly addNameRange     '0.9.2',
+16 silly addNameRange     '0.9.3',
+16 silly addNameRange     '0.9.4',
+16 silly addNameRange     '0.9.5',
+16 silly addNameRange     '0.9.6',
+16 silly addNameRange     '0.10.0-beta1',
+16 silly addNameRange     '0.10.0-beta2',
+16 silly addNameRange     '0.10.0-beta4',
+16 silly addNameRange     '0.10.0-beta5',
+16 silly addNameRange     '0.10.0-beta6',
+16 silly addNameRange     '0.10.0-beta7',
+16 silly addNameRange     '0.10.0-beta8',
+16 silly addNameRange     '0.10.0-beta9',
+16 silly addNameRange     '0.10.0-beta10',
+16 silly addNameRange     '0.10.0-beta11',
+16 silly addNameRange     '0.10.0-beta12',
+16 silly addNameRange     '0.10.0-beta13',
+16 silly addNameRange     '0.10.0-beta14',
+16 silly addNameRange     '0.10.0-beta15',
+16 silly addNameRange     '0.10.0-beta16',
+16 silly addNameRange     '0.10.0-beta17',
+16 silly addNameRange     '0.10.0-beta18',
+16 silly addNameRange     '0.10.0-beta19',
+16 silly addNameRange     '0.10.0-beta20',
+16 silly addNameRange     '0.10.0-beta21',
+16 silly addNameRange     '0.10.0-beta22',
+16 silly addNameRange     '0.10.0-beta23',
+16 silly addNameRange     '0.10.0-beta25',
+16 silly addNameRange     '0.10.0',
+16 silly addNameRange     '0.10.1',
+16 silly addNameRange     '0.10.2',
+16 silly addNameRange     '0.10.3',
+16 silly addNameRange     '0.10.4',
+16 silly addNameRange     '0.10.5',
+16 silly addNameRange     '0.10.6',
+16 silly addNameRange     '0.10.7',
+16 silly addNameRange     '0.10.8',
+16 silly addNameRange     '0.11.0-beta1',
+16 silly addNameRange     '0.11.0',
+16 silly addNameRange     '0.11.1' ] ]
+17 verbose addNamed pm2@0.11.1
+18 silly addNamed semver.valid 0.11.1
+19 silly addNamed semver.validRange 0.11.1
+20 silly cache afterAdd pm2@0.11.1
+21 verbose afterAdd /home/fan/.npm/pm2/0.11.1/package/package.json not in flight; writing
+22 verbose afterAdd /home/fan/.npm/pm2/0.11.1/package/package.json written
+23 silly install resolved [ { name: 'pm2',
+23 silly install resolved     preferGlobal: 'true',
+23 silly install resolved     version: '0.11.1',
+23 silly install resolved     os: [ '!win32' ],
+23 silly install resolved     engines: { node: '>=0.10' },
+23 silly install resolved     directories: { bin: './bin', lib: './lib', example: './examples' },
+23 silly install resolved     author:
+23 silly install resolved      { name: 'Strzelewicz Alexandre',
+23 silly install resolved        email: 'as@unitech.io',
+23 silly install resolved        url: 'http://pm2.io' },
+23 silly install resolved     maintainers: [ [Object] ],
+23 silly install resolved     contributors:
+23 silly install resolved      [ [Object],
+23 silly install resolved        [Object],
+23 silly install resolved        [Object],
+23 silly install resolved        [Object],
+23 silly install resolved        [Object],
+23 silly install resolved        [Object],
+23 silly install resolved        [Object],
+23 silly install resolved        [Object],
+23 silly install resolved        [Object],
+23 silly install resolved        [Object] ],
+23 silly install resolved     homepage: 'https://github.com/Unitech/pm2',
+23 silly install resolved     description: 'Modern CLI process manager for Node apps with a builtin load-balancer. Perfectly designed for microservices architecture.',
+23 silly install resolved     main: 'index.js',
+23 silly install resolved     scripts:
+23 silly install resolved      { test: 'NODE_ENV=test bash test/index.sh && NODE_ENV=test bash test/main.sh',
+23 silly install resolved        preinstall: 'bash ./scripts/preinstall.sh',
+23 silly install resolved        postinstall: 'bash ./scripts/postinstall.sh' },
+23 silly install resolved     keywords:
+23 silly install resolved      [ 'cli',
+23 silly install resolved        'fault tolerant',
+23 silly install resolved        'sysadmin',
+23 silly install resolved        'tools',
+23 silly install resolved        'pm2',
+23 silly install resolved        'logs',
+23 silly install resolved        'log',
+23 silly install resolved        'json',
+23 silly install resolved        'express',
+23 silly install resolved        'hapi',
+23 silly install resolved        'kraken',
+23 silly install resolved        'reload',
+23 silly install resolved        'microservice',
+23 silly install resolved        'programmatic',
+23 silly install resolved        'harmony',
+23 silly install resolved        'node-pm2',
+23 silly install resolved        'production',
+23 silly install resolved        'keymetrics',
+23 silly install resolved        'deploy',
+23 silly install resolved        'deployment',
+23 silly install resolved        'daemon',
+23 silly install resolved        'supervisor',
+23 silly install resolved        'nodemon',
+23 silly install resolved        'pm2.io',
+23 silly install resolved        'ghost',
+23 silly install resolved        'ghost production',
+23 silly install resolved        'monitoring',
+23 silly install resolved        'process manager',
+23 silly install resolved        'forever',
+23 silly install resolved        'forever-monitor',
+23 silly install resolved        'keep process alive',
+23 silly install resolved        'process configuration',
+23 silly install resolved        'clustering',
+23 silly install resolved        'cluster cli',
+23 silly install resolved        'cluster',
+23 silly install resolved        'cron',
+23 silly install resolved        'devops',
+23 silly install resolved        'dev ops' ],
+23 silly install resolved     bin: { pm2: './bin/pm2' },
+23 silly install resolved     dependencies:
+23 silly install resolved      { async: '~0.9.0',
+23 silly install resolved        chalk: '~0.5.1',
+23 silly install resolved        chokidar: '0.9.0',
+23 silly install resolved        'cli-table': '0.3.0',
+23 silly install resolved        'coffee-script': '1.8.0',
+23 silly install resolved        colors: '0.6.2',
+23 silly install resolved        commander: '2.3.0',
+23 silly install resolved        cron: '1.0.4',
+23 silly install resolved        debug: '2.0.0',
+23 silly install resolved        eventemitter2: '0.4.14',
+23 silly install resolved        'json-stringify-safe': '5.0.0',
+23 silly install resolved        moment: '~2.8.2',
+23 silly install resolved        nssocket: '0.5.1',
+23 silly install resolved        pidusage: '0.1.0',
+23 silly install resolved        axm: '0.2.13',
+23 silly install resolved        'pm2-axon': '2.0.7',
+23 silly install resolved        'pm2-axon-rpc': '0.3.6',
+23 silly install resolved        'pm2-deploy': '~0.1.0',
+23 silly install resolved        'pm2-interface': '2.0.4',
+23 silly install resolved        'pm2-multimeter': '0.1.2',
+23 silly install resolved        'pm2-rpc-fallback': '3.0.9',
+23 silly install resolved        vizionar: '^0.1.0',
+23 silly install resolved        punt: '2.2.0',
+23 silly install resolved        'uid-number': '0.0.5',
+23 silly install resolved        'pm2-logs': '~0.1.1',
+23 silly install resolved        ikt: 'git+http://ikt.pm2.io/ikt.git#master' },
+23 silly install resolved     devDependencies:
+23 silly install resolved      { mocha: '^1.20.1',
+23 silly install resolved        should: '^4.0.0',
+23 silly install resolved        'better-assert': '^1.0.0',
+23 silly install resolved        'promise-spawner': '^0.0.3' },
+23 silly install resolved     optionalDependencies:
+23 silly install resolved      { 'pm2-logs': '~0.1.1',
+23 silly install resolved        ikt: 'git+http://ikt.pm2.io/ikt.git#master' },
+23 silly install resolved     bugs: { url: 'https://github.com/Unitech/pm2/issues' },
+23 silly install resolved     repository: { type: 'git', url: 'git://github.com/Unitech/pm2.git' },
+23 silly install resolved     license: 'AGPLv3',
+23 silly install resolved     gitHead: 'ddd8290432e7d9df13980729f254ae577c44c700',
+23 silly install resolved     _id: 'pm2@0.11.1',
+23 silly install resolved     _shasum: '700dd114d65b1076e5948f9ff6cef37fa0428c48',
+23 silly install resolved     _from: 'pm2@*',
+23 silly install resolved     _npmVersion: '2.0.0',
+23 silly install resolved     _npmUser: { name: 'tknew', email: 'strzelewicz.alexandre@gmail.com' },
+23 silly install resolved     dist:
+23 silly install resolved      { shasum: '700dd114d65b1076e5948f9ff6cef37fa0428c48',
+23 silly install resolved        tarball: 'http://registry.npmjs.org/pm2/-/pm2-0.11.1.tgz' },
+23 silly install resolved     _resolved: 'https://registry.npmjs.org/pm2/-/pm2-0.11.1.tgz',
+23 silly install resolved     readme: 'ERROR: No README data found!' } ]
+24 info install pm2@0.11.1 into /usr/local/lib
+25 info installOne pm2@0.11.1
+26 verbose installOne of pm2 to /usr/local/lib not in flight; installing
+27 verbose lock using /home/fan/.npm/_locks/pm2-d247c27dec6aa07b.lock for /usr/local/lib/node_modules/pm2
+28 silly install write writing pm2 0.11.1 to /usr/local/lib/node_modules/pm2
+29 silly cache addNamed cb pm2@0.11.1
+30 verbose unbuild lib/node_modules/pm2
+31 verbose gentlyRm vacuuming /usr/local/lib/node_modules/pm2
+32 verbose tar unpack /home/fan/.npm/pm2/0.11.1/package.tgz
+33 verbose tar unpacking to /usr/local/lib/node_modules/pm2
+34 verbose gentlyRm vacuuming /usr/local/lib/node_modules/pm2
+35 silly gunzTarPerm modes [ '755', '644' ]
+36 silly gunzTarPerm extractEntry package.json
+37 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+38 silly gunzTarPerm extractEntry .npmignore
+39 silly gunzTarPerm modified mode [ '.npmignore', 436, 420 ]
+40 silly gunzTarPerm extractEntry README.md
+41 silly gunzTarPerm modified mode [ 'README.md', 436, 420 ]
+42 silly gunzTarPerm extractEntry LICENSE
+43 silly gunzTarPerm modified mode [ 'LICENSE', 436, 420 ]
+44 silly gunzTarPerm extractEntry constants.js
+45 silly gunzTarPerm modified mode [ 'constants.js', 436, 420 ]
+46 silly gunzTarPerm extractEntry index.js
+47 silly gunzTarPerm modified mode [ 'index.js', 436, 420 ]
+48 silly gunzTarPerm extractEntry CONTRIBUTING.md
+49 silly gunzTarPerm modified mode [ 'CONTRIBUTING.md', 436, 420 ]
+50 silly gunzTarPerm extractEntry GNU-AGPL-3.0.txt
+51 silly gunzTarPerm modified mode [ 'GNU-AGPL-3.0.txt', 436, 420 ]
+52 silly gunzTarPerm extractEntry .gitattributes
+53 silly gunzTarPerm modified mode [ '.gitattributes', 436, 420 ]
+54 silly gunzTarPerm extractEntry MIGRATING.md
+55 silly gunzTarPerm modified mode [ 'MIGRATING.md', 436, 420 ]
+56 silly gunzTarPerm extractEntry .editorconfig
+57 silly gunzTarPerm modified mode [ '.editorconfig', 436, 420 ]
+58 silly gunzTarPerm extractEntry apps/default-path-echo.json
+59 silly gunzTarPerm modified mode [ 'apps/default-path-echo.json', 436, 420 ]
+60 silly gunzTarPerm extractEntry apps/all-pm2.json
+61 silly gunzTarPerm modified mode [ 'apps/all-pm2.json', 436, 420 ]
+62 silly gunzTarPerm extractEntry apps/auto-kill-echo.json
+63 silly gunzTarPerm modified mode [ 'apps/auto-kill-echo.json', 436, 420 ]
+64 silly gunzTarPerm extractEntry apps/cluster-pm2.json
+65 silly gunzTarPerm modified mode [ 'apps/cluster-pm2.json', 436, 420 ]
+66 silly gunzTarPerm extractEntry apps/cron-pm2.json
+67 silly gunzTarPerm modified mode [ 'apps/cron-pm2.json', 436, 420 ]
+68 silly gunzTarPerm extractEntry apps/args.json
+69 silly gunzTarPerm modified mode [ 'apps/args.json', 436, 420 ]
+70 silly gunzTarPerm extractEntry apps/echo-pm2.json
+71 silly gunzTarPerm modified mode [ 'apps/echo-pm2.json', 436, 420 ]
+72 silly gunzTarPerm extractEntry apps/env-pm2.json
+73 silly gunzTarPerm modified mode [ 'apps/env-pm2.json', 436, 420 ]
+74 silly gunzTarPerm extractEntry apps/killfast.json
+75 silly gunzTarPerm modified mode [ 'apps/killfast.json', 436, 420 ]
+76 silly gunzTarPerm extractEntry apps/multi-pm2.json
+77 silly gunzTarPerm modified mode [ 'apps/multi-pm2.json', 436, 420 ]
+78 silly gunzTarPerm extractEntry apps/no-name-echo.json
+79 silly gunzTarPerm modified mode [ 'apps/no-name-echo.json', 436, 420 ]
+80 silly gunzTarPerm extractEntry bin/pm2
+81 silly gunzTarPerm modified mode [ 'bin/pm2', 509, 493 ]
+82 silly gunzTarPerm extractEntry .travis.yml
+83 silly gunzTarPerm modified mode [ '.travis.yml', 436, 420 ]
+84 silly gunzTarPerm extractEntry examples/args.js
+85 silly gunzTarPerm modified mode [ 'examples/args.js', 436, 420 ]
+86 silly gunzTarPerm extractEntry examples/echo.js
+87 silly gunzTarPerm modified mode [ 'examples/echo.js', 509, 493 ]
+88 silly gunzTarPerm extractEntry examples/moduleparent.js
+89 silly gunzTarPerm modified mode [ 'examples/moduleparent.js', 436, 420 ]
+90 silly gunzTarPerm extractEntry examples/modulechild.js
+91 silly gunzTarPerm modified mode [ 'examples/modulechild.js', 436, 420 ]
+92 silly gunzTarPerm extractEntry examples/echokill.js
+93 silly gunzTarPerm modified mode [ 'examples/echokill.js', 436, 420 ]
+94 silly gunzTarPerm extractEntry examples/programmatic.js
+95 silly gunzTarPerm modified mode [ 'examples/programmatic.js', 436, 420 ]
+96 silly gunzTarPerm extractEntry examples/env_args.js
+97 silly gunzTarPerm modified mode [ 'examples/env_args.js', 436, 420 ]
+98 silly gunzTarPerm extractEntry examples/load-me.js
+99 silly gunzTarPerm modified mode [ 'examples/load-me.js', 436, 420 ]
+100 silly gunzTarPerm extractEntry examples/exit.js
+101 silly gunzTarPerm modified mode [ 'examples/exit.js', 436, 420 ]
+102 silly gunzTarPerm extractEntry examples/auto-bench.js
+103 silly gunzTarPerm modified mode [ 'examples/auto-bench.js', 436, 420 ]
+104 silly gunzTarPerm extractEntry examples/graceful-exit.js
+105 silly gunzTarPerm modified mode [ 'examples/graceful-exit.js', 436, 420 ]
+106 silly gunzTarPerm extractEntry examples/cwd.js
+107 silly gunzTarPerm modified mode [ 'examples/cwd.js', 436, 420 ]
+108 silly gunzTarPerm extractEntry examples/harmony.js
+109 silly gunzTarPerm modified mode [ 'examples/harmony.js', 436, 420 ]
+110 silly gunzTarPerm extractEntry examples/custom_action_with_params.js
+111 silly gunzTarPerm modified mode [ 'examples/custom_action_with_params.js', 436, 420 ]
+112 silly gunzTarPerm extractEntry examples/http-trace.js
+113 silly gunzTarPerm modified mode [ 'examples/http-trace.js', 436, 420 ]
+114 silly gunzTarPerm extractEntry examples/custom_action.js
+115 silly gunzTarPerm modified mode [ 'examples/custom_action.js', 436, 420 ]
+116 silly gunzTarPerm extractEntry examples/human_event.js
+117 silly gunzTarPerm modified mode [ 'examples/human_event.js', 436, 420 ]
+118 silly gunzTarPerm extractEntry examples/child2.js
+119 silly gunzTarPerm modified mode [ 'examples/child2.js', 436, 420 ]
+120 silly gunzTarPerm extractEntry examples/json.js
+121 silly gunzTarPerm modified mode [ 'examples/json.js', 436, 420 ]
+122 silly gunzTarPerm extractEntry examples/require.js
+123 silly gunzTarPerm modified mode [ 'examples/require.js', 436, 420 ]
+124 silly gunzTarPerm extractEntry examples/keymetrics-load.js
+125 silly gunzTarPerm modified mode [ 'examples/keymetrics-load.js', 436, 420 ]
+126 silly gunzTarPerm extractEntry examples/child.js
+127 silly gunzTarPerm modified mode [ 'examples/child.js', 436, 420 ]
+128 silly gunzTarPerm extractEntry examples/keymetrics-test.js
+129 silly gunzTarPerm modified mode [ 'examples/keymetrics-test.js', 436, 420 ]
+130 silly gunzTarPerm extractEntry examples/sendmsg.js
+131 silly gunzTarPerm modified mode [ 'examples/sendmsg.js', 436, 420 ]
+132 silly gunzTarPerm extractEntry examples/kill-not-so-fast.js
+133 silly gunzTarPerm modified mode [ 'examples/kill-not-so-fast.js', 436, 420 ]
+134 silly gunzTarPerm extractEntry examples/stop-after5.js
+135 silly gunzTarPerm modified mode [ 'examples/stop-after5.js', 436, 420 ]
+136 silly gunzTarPerm extractEntry examples/kill-slow.js
+137 silly gunzTarPerm modified mode [ 'examples/kill-slow.js', 436, 420 ]
+138 silly gunzTarPerm extractEntry examples/child-env.js
+139 silly gunzTarPerm modified mode [ 'examples/child-env.js', 436, 420 ]
+140 silly gunzTarPerm extractEntry examples/killfast.js
+141 silly gunzTarPerm modified mode [ 'examples/killfast.js', 436, 420 ]
+142 silly gunzTarPerm extractEntry examples/throw.js
+143 silly gunzTarPerm modified mode [ 'examples/throw.js', 436, 420 ]
+144 silly gunzTarPerm extractEntry examples/killslow.js
+145 silly gunzTarPerm modified mode [ 'examples/killslow.js', 436, 420 ]
+146 silly gunzTarPerm extractEntry examples/auto-save.js
+147 silly gunzTarPerm modified mode [ 'examples/auto-save.js', 436, 420 ]
+148 silly gunzTarPerm extractEntry examples/killtoofast.js
+149 silly gunzTarPerm modified mode [ 'examples/killtoofast.js', 436, 420 ]
+150 silly gunzTarPerm extractEntry examples/auto-restart-all.js
+151 silly gunzTarPerm modified mode [ 'examples/auto-restart-all.js', 436, 420 ]
+152 silly gunzTarPerm extractEntry examples/leak.js
+153 silly gunzTarPerm modified mode [ 'examples/leak.js', 436, 420 ]
+154 silly gunzTarPerm extractEntry examples/env.js
+155 silly gunzTarPerm modified mode [ 'examples/env.js', 436, 420 ]
+156 silly gunzTarPerm extractEntry examples/tree.js
+157 silly gunzTarPerm modified mode [ 'examples/tree.js', 436, 420 ]
+158 silly gunzTarPerm extractEntry examples/expose_method.js
+159 silly gunzTarPerm modified mode [ 'examples/expose_method.js', 436, 420 ]
+160 silly gunzTarPerm extractEntry examples/exec_watch.json
+161 silly gunzTarPerm modified mode [ 'examples/exec_watch.json', 436, 420 ]
+162 silly gunzTarPerm extractEntry examples/echo.rb
+163 silly gunzTarPerm modified mode [ 'examples/echo.rb', 436, 420 ]
+164 silly gunzTarPerm extractEntry examples/echo.php
+165 silly gunzTarPerm modified mode [ 'examples/echo.php', 436, 420 ]
+166 silly gunzTarPerm extractEntry examples/process.json
+167 silly gunzTarPerm modified mode [ 'examples/process.json', 436, 420 ]
+168 silly gunzTarPerm extractEntry examples/echo.coffee
+169 silly gunzTarPerm modified mode [ 'examples/echo.coffee', 436, 420 ]
+170 silly gunzTarPerm extractEntry examples/child.js-pm2.json
+171 silly gunzTarPerm modified mode [ 'examples/child.js-pm2.json', 436, 420 ]
+172 silly gunzTarPerm extractEntry examples/child-pm2.json
+173 silly gunzTarPerm modified mode [ 'examples/child-pm2.json', 436, 420 ]
+174 silly gunzTarPerm extractEntry examples/child-pm2-v2.json
+175 silly gunzTarPerm modified mode [ 'examples/child-pm2-v2.json', 436, 420 ]
+176 silly gunzTarPerm extractEntry examples/bashscript.sh
+177 silly gunzTarPerm modified mode [ 'examples/bashscript.sh', 436, 420 ]
+178 silly gunzTarPerm extractEntry ADVANCED_README.md
+179 silly gunzTarPerm modified mode [ 'ADVANCED_README.md', 436, 420 ]
+180 silly gunzTarPerm extractEntry lib/CLI.js
+181 silly gunzTarPerm modified mode [ 'lib/CLI.js', 436, 420 ]
+182 silly gunzTarPerm extractEntry lib/Event.js
+183 silly gunzTarPerm modified mode [ 'lib/Event.js', 436, 420 ]
+184 silly gunzTarPerm extractEntry lib/Watcher.js
+185 silly gunzTarPerm modified mode [ 'lib/Watcher.js', 436, 420 ]
+186 silly gunzTarPerm extractEntry lib/God.js
+187 silly gunzTarPerm modified mode [ 'lib/God.js', 436, 420 ]
+188 silly gunzTarPerm extractEntry lib/HttpInterface.js
+189 silly gunzTarPerm modified mode [ 'lib/HttpInterface.js', 436, 420 ]
+190 silly gunzTarPerm extractEntry lib/Common.js
+191 silly gunzTarPerm modified mode [ 'lib/Common.js', 436, 420 ]
+192 silly gunzTarPerm extractEntry lib/Log.js
+193 silly gunzTarPerm modified mode [ 'lib/Log.js', 436, 420 ]
+194 silly gunzTarPerm extractEntry lib/CliUx.js
+195 silly gunzTarPerm modified mode [ 'lib/CliUx.js', 436, 420 ]
+196 silly gunzTarPerm extractEntry lib/ProcessContainer.js
+197 silly gunzTarPerm modified mode [ 'lib/ProcessContainer.js', 436, 420 ]
+198 silly gunzTarPerm extractEntry lib/Satan.js
+199 silly gunzTarPerm modified mode [ 'lib/Satan.js', 436, 420 ]
+200 silly gunzTarPerm extractEntry lib/TreeKill.js
+201 silly gunzTarPerm modified mode [ 'lib/TreeKill.js', 436, 420 ]
+202 silly gunzTarPerm extractEntry lib/Utility.js
+203 silly gunzTarPerm modified mode [ 'lib/Utility.js', 436, 420 ]
+204 silly gunzTarPerm extractEntry lib/Monit.js
+205 silly gunzTarPerm modified mode [ 'lib/Monit.js', 436, 420 ]
+206 silly gunzTarPerm extractEntry lib/Interactor/Cipher.js
+207 silly gunzTarPerm modified mode [ 'lib/Interactor/Cipher.js', 436, 420 ]
+208 silly gunzTarPerm extractEntry lib/Interactor/Daemon.js
+209 silly gunzTarPerm modified mode [ 'lib/Interactor/Daemon.js', 436, 420 ]
+210 silly gunzTarPerm extractEntry lib/Interactor/Filter.js
+211 silly gunzTarPerm modified mode [ 'lib/Interactor/Filter.js', 436, 420 ]
+212 silly gunzTarPerm extractEntry lib/Interactor/Http.js
+213 silly gunzTarPerm modified mode [ 'lib/Interactor/Http.js', 436, 420 ]
+214 silly gunzTarPerm extractEntry lib/Interactor/HttpRequest.js
+215 silly gunzTarPerm modified mode [ 'lib/Interactor/HttpRequest.js', 436, 420 ]
+216 silly gunzTarPerm extractEntry lib/Interactor/InteractorDaemonizer.js
+217 silly gunzTarPerm modified mode [ 'lib/Interactor/InteractorDaemonizer.js', 436, 420 ]
+218 silly gunzTarPerm extractEntry lib/Interactor/PushInteractor.js
+219 silly gunzTarPerm modified mode [ 'lib/Interactor/PushInteractor.js', 436, 420 ]
+220 silly gunzTarPerm extractEntry lib/Interactor/ReverseInteractor.js
+221 silly gunzTarPerm modified mode [ 'lib/Interactor/ReverseInteractor.js', 436, 420 ]
+222 silly gunzTarPerm extractEntry lib/Interactor/Tools.js
+223 silly gunzTarPerm modified mode [ 'lib/Interactor/Tools.js', 436, 420 ]
+224 silly gunzTarPerm extractEntry lib/Interactor/WatchDog.js
+225 silly gunzTarPerm modified mode [ 'lib/Interactor/WatchDog.js', 436, 420 ]
+226 silly gunzTarPerm extractEntry lib/God/ActionMethods.js
+227 silly gunzTarPerm modified mode [ 'lib/God/ActionMethods.js', 436, 420 ]
+228 silly gunzTarPerm extractEntry lib/God/ClusterMode.js
+229 silly gunzTarPerm modified mode [ 'lib/God/ClusterMode.js', 436, 420 ]
+230 silly gunzTarPerm extractEntry lib/God/DeprecatedCalls.js
+231 silly gunzTarPerm modified mode [ 'lib/God/DeprecatedCalls.js', 436, 420 ]
+232 silly gunzTarPerm extractEntry lib/God/ForkMode.js
+233 silly gunzTarPerm modified mode [ 'lib/God/ForkMode.js', 436, 420 ]
+234 silly gunzTarPerm extractEntry lib/God/Methods.js
+235 silly gunzTarPerm modified mode [ 'lib/God/Methods.js', 436, 420 ]
+236 silly gunzTarPerm extractEntry lib/God/Reload.js
+237 silly gunzTarPerm modified mode [ 'lib/God/Reload.js', 436, 420 ]
+238 silly gunzTarPerm extractEntry lib/custom_options.sh
+239 silly gunzTarPerm modified mode [ 'lib/custom_options.sh', 436, 420 ]
+240 silly gunzTarPerm extractEntry lib/interpreter.json
+241 silly gunzTarPerm modified mode [ 'lib/interpreter.json', 436, 420 ]
+242 silly gunzTarPerm extractEntry lib/sample.json
+243 silly gunzTarPerm modified mode [ 'lib/sample.json', 436, 420 ]
+244 silly gunzTarPerm extractEntry lib/scripts/pm2
+245 silly gunzTarPerm modified mode [ 'lib/scripts/pm2', 436, 420 ]
+246 silly gunzTarPerm extractEntry lib/scripts/pm2-init-amazon.sh
+247 silly gunzTarPerm modified mode [ 'lib/scripts/pm2-init-amazon.sh', 436, 420 ]
+248 silly gunzTarPerm extractEntry lib/scripts/pm2-init-centos.sh
+249 silly gunzTarPerm modified mode [ 'lib/scripts/pm2-init-centos.sh', 436, 420 ]
+250 silly gunzTarPerm extractEntry lib/scripts/pm2-init.sh
+251 silly gunzTarPerm modified mode [ 'lib/scripts/pm2-init.sh', 436, 420 ]
+252 silly gunzTarPerm extractEntry lib/scripts/pm2.service
+253 silly gunzTarPerm modified mode [ 'lib/scripts/pm2.service', 436, 420 ]
+254 silly gunzTarPerm extractEntry scripts/kill.js
+255 silly gunzTarPerm modified mode [ 'scripts/kill.js', 436, 420 ]
+256 silly gunzTarPerm extractEntry scripts/ping.js
+257 silly gunzTarPerm modified mode [ 'scripts/ping.js', 436, 420 ]
+258 silly gunzTarPerm extractEntry scripts/postinstall.sh
+259 silly gunzTarPerm modified mode [ 'scripts/postinstall.sh', 436, 420 ]
+260 silly gunzTarPerm extractEntry scripts/preinstall.sh
+261 silly gunzTarPerm modified mode [ 'scripts/preinstall.sh', 436, 420 ]
+262 silly gunzTarPerm extractEntry CHANGELOG.md
+263 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 436, 420 ]
+264 silly gunzTarPerm extractEntry pres/Drawing1.png
+265 silly gunzTarPerm modified mode [ 'pres/Drawing1.png', 436, 420 ]
+266 silly gunzTarPerm extractEntry pres/pm2-htop.png
+267 silly gunzTarPerm modified mode [ 'pres/pm2-htop.png', 436, 420 ]
+268 silly gunzTarPerm extractEntry pres/pm2-list.png
+269 silly gunzTarPerm modified mode [ 'pres/pm2-list.png', 436, 420 ]
+270 silly gunzTarPerm extractEntry pres/pm2-logs.png
+271 silly gunzTarPerm modified mode [ 'pres/pm2-logs.png', 436, 420 ]
+272 silly gunzTarPerm extractEntry pres/pm2-monit.png
+273 silly gunzTarPerm modified mode [ 'pres/pm2-monit.png', 436, 420 ]
+274 silly gunzTarPerm extractEntry pres/pm2-resurect.png
+275 silly gunzTarPerm modified mode [ 'pres/pm2-resurect.png', 436, 420 ]
+276 silly gunzTarPerm extractEntry pres/pm2-v2.png
+277 silly gunzTarPerm modified mode [ 'pres/pm2-v2.png', 436, 420 ]
+278 silly gunzTarPerm extractEntry pres/pm2.20d3ef.png
+279 silly gunzTarPerm modified mode [ 'pres/pm2.20d3ef.png', 436, 420 ]
+280 silly gunzTarPerm extractEntry pres/top-logo-wo.png
+281 silly gunzTarPerm modified mode [ 'pres/top-logo-wo.png', 436, 420 ]
+282 silly gunzTarPerm extractEntry test/README.md
+283 silly gunzTarPerm modified mode [ 'test/README.md', 436, 420 ]
+284 silly gunzTarPerm extractEntry test/programmatic/god.mocha.js
+285 silly gunzTarPerm modified mode [ 'test/programmatic/god.mocha.js', 436, 420 ]
+286 silly gunzTarPerm extractEntry test/programmatic/programmatic.js
+287 silly gunzTarPerm modified mode [ 'test/programmatic/programmatic.js', 436, 420 ]
+288 silly gunzTarPerm extractEntry test/programmatic/satan.mocha.js
+289 silly gunzTarPerm modified mode [ 'test/programmatic/satan.mocha.js', 436, 420 ]
+290 silly gunzTarPerm extractEntry test/benchmarks/monit-daemon.sh
+291 silly gunzTarPerm modified mode [ 'test/benchmarks/monit-daemon.sh', 509, 493 ]
+292 silly gunzTarPerm extractEntry test/benchmarks/monit.sh
+293 silly gunzTarPerm modified mode [ 'test/benchmarks/monit.sh', 509, 493 ]
+294 silly gunzTarPerm extractEntry test/benchmarks/result.monit
+295 silly gunzTarPerm modified mode [ 'test/benchmarks/result.monit', 436, 420 ]
+296 silly gunzTarPerm extractEntry test/deprecated/interactor.mocha.js
+297 silly gunzTarPerm modified mode [ 'test/deprecated/interactor.mocha.js', 436, 420 ]
+298 silly gunzTarPerm extractEntry test/deprecated/monit.mocha.js
+299 silly gunzTarPerm modified mode [ 'test/deprecated/monit.mocha.js', 436, 420 ]
+300 silly gunzTarPerm extractEntry test/deprecated/pm2Bus.mocha.js
+301 silly gunzTarPerm modified mode [ 'test/deprecated/pm2Bus.mocha.js', 436, 420 ]
+302 silly gunzTarPerm extractEntry test/fixtures/throw.js
+303 silly gunzTarPerm modified mode [ 'test/fixtures/throw.js', 436, 420 ]
+304 silly gunzTarPerm extractEntry test/fixtures/echo.js
+305 silly gunzTarPerm modified mode [ 'test/fixtures/echo.js', 436, 420 ]
+306 silly gunzTarPerm extractEntry test/fixtures/env.js
+307 silly gunzTarPerm modified mode [ 'test/fixtures/env.js', 436, 420 ]
+308 silly gunzTarPerm extractEntry test/fixtures/graceful-exit-no-listen.js
+309 silly gunzTarPerm modified mode [ 'test/fixtures/graceful-exit-no-listen.js', 436, 420 ]
+310 silly gunzTarPerm extractEntry test/fixtures/cron.js
+311 silly gunzTarPerm modified mode [ 'test/fixtures/cron.js', 436, 420 ]
+312 silly gunzTarPerm extractEntry test/fixtures/graceful-exit.js
+313 silly gunzTarPerm modified mode [ 'test/fixtures/graceful-exit.js', 436, 420 ]
+314 silly gunzTarPerm extractEntry test/fixtures/harmony.js
+315 silly gunzTarPerm modified mode [ 'test/fixtures/harmony.js', 436, 420 ]
+316 silly gunzTarPerm extractEntry test/fixtures/killnotsofast.js
+317 silly gunzTarPerm modified mode [ 'test/fixtures/killnotsofast.js', 436, 420 ]
+318 silly gunzTarPerm extractEntry test/fixtures/killtoofast.js
+319 silly gunzTarPerm modified mode [ 'test/fixtures/killtoofast.js', 436, 420 ]
+320 silly gunzTarPerm extractEntry test/fixtures/network.js
+321 silly gunzTarPerm modified mode [ 'test/fixtures/network.js', 436, 420 ]
+322 silly gunzTarPerm extractEntry test/fixtures/child.js
+323 silly gunzTarPerm modified mode [ 'test/fixtures/child.js', 436, 420 ]
+324 silly gunzTarPerm extractEntry test/fixtures/quit.js
+325 silly gunzTarPerm modified mode [ 'test/fixtures/quit.js', 436, 420 ]
+326 silly gunzTarPerm extractEntry test/fixtures/big-array.js
+327 silly gunzTarPerm modified mode [ 'test/fixtures/big-array.js', 436, 420 ]
+328 silly gunzTarPerm extractEntry test/fixtures/server-watch.bak.js
+329 silly gunzTarPerm modified mode [ 'test/fixtures/server-watch.bak.js', 436, 420 ]
+330 silly gunzTarPerm extractEntry test/fixtures/big-array-es6.js
+331 silly gunzTarPerm modified mode [ 'test/fixtures/big-array-es6.js', 436, 420 ]
+332 silly gunzTarPerm extractEntry test/fixtures/server.js
+333 silly gunzTarPerm modified mode [ 'test/fixtures/server.js', 436, 420 ]
+334 silly gunzTarPerm extractEntry test/fixtures/args.js
+335 silly gunzTarPerm modified mode [ 'test/fixtures/args.js', 436, 420 ]
+336 silly gunzTarPerm extractEntry test/fixtures/signal.js
+337 silly gunzTarPerm modified mode [ 'test/fixtures/signal.js', 436, 420 ]
+338 silly gunzTarPerm extractEntry test/fixtures/graceful-exit-send.js
+339 silly gunzTarPerm modified mode [ 'test/fixtures/graceful-exit-send.js', 436, 420 ]
+340 silly gunzTarPerm extractEntry test/fixtures/events/custom_action.js
+341 silly gunzTarPerm modified mode [ 'test/fixtures/events/custom_action.js', 509, 493 ]
+342 silly gunzTarPerm extractEntry test/fixtures/events/custom_action_with_params.js
+343 silly gunzTarPerm modified mode [ 'test/fixtures/events/custom_action_with_params.js', 509, 493 ]
+344 silly gunzTarPerm extractEntry test/fixtures/events/own_event.js
+345 silly gunzTarPerm modified mode [ 'test/fixtures/events/own_event.js', 436, 420 ]
+346 silly gunzTarPerm extractEntry test/fixtures/cluster-pm2.json
+347 silly gunzTarPerm modified mode [ 'test/fixtures/cluster-pm2.json', 436, 420 ]
+348 silly gunzTarPerm extractEntry test/fixtures/bashscript.sh
+349 silly gunzTarPerm modified mode [ 'test/fixtures/bashscript.sh', 436, 420 ]
+350 silly gunzTarPerm extractEntry test/fixtures/echo-pm2.json
+351 silly gunzTarPerm modified mode [ 'test/fixtures/echo-pm2.json', 436, 420 ]
+352 silly gunzTarPerm extractEntry test/fixtures/echo-to-pm2.json
+353 silly gunzTarPerm modified mode [ 'test/fixtures/echo-to-pm2.json', 436, 420 ]
+354 silly gunzTarPerm extractEntry test/fixtures/harmony.json
+355 silly gunzTarPerm modified mode [ 'test/fixtures/harmony.json', 436, 420 ]
+356 silly gunzTarPerm extractEntry test/fixtures/echo.coffee
+357 silly gunzTarPerm modified mode [ 'test/fixtures/echo.coffee', 436, 420 ]
+358 silly gunzTarPerm extractEntry test/fixtures/change_cwd.json
+359 silly gunzTarPerm modified mode [ 'test/fixtures/change_cwd.json', 436, 420 ]
+360 silly gunzTarPerm extractEntry test/fixtures/max-mem.json
+361 silly gunzTarPerm modified mode [ 'test/fixtures/max-mem.json', 436, 420 ]
+362 silly gunzTarPerm extractEntry test/fixtures/multi-echo.json
+363 silly gunzTarPerm modified mode [ 'test/fixtures/multi-echo.json', 436, 420 ]
+364 silly gunzTarPerm extractEntry test/fixtures/echoto-pm2.json
+365 silly gunzTarPerm modified mode [ 'test/fixtures/echoto-pm2.json', 436, 420 ]
+366 silly gunzTarPerm extractEntry test/fixtures/no_cwd_change.json
+367 silly gunzTarPerm modified mode [ 'test/fixtures/no_cwd_change.json', 436, 420 ]
+368 silly gunzTarPerm extractEntry test/fixtures/path1/iminpath1.js
+369 silly gunzTarPerm modified mode [ 'test/fixtures/path1/iminpath1.js', 436, 420 ]
+370 silly gunzTarPerm extractEntry test/fixtures/path1/path2/iminpath2.js
+371 silly gunzTarPerm modified mode [ 'test/fixtures/path1/path2/iminpath2.js', 436, 420 ]
+372 silly gunzTarPerm extractEntry test/fixtures/ecosystem.json
+373 silly gunzTarPerm modified mode [ 'test/fixtures/ecosystem.json', 436, 420 ]
+374 silly gunzTarPerm extractEntry test/fixtures/env-refreshed.json
+375 silly gunzTarPerm modified mode [ 'test/fixtures/env-refreshed.json', 436, 420 ]
+376 silly gunzTarPerm extractEntry test/fixtures/all.json
+377 silly gunzTarPerm modified mode [ 'test/fixtures/all.json', 436, 420 ]
+378 silly gunzTarPerm extractEntry test/fixtures/all2.json
+379 silly gunzTarPerm modified mode [ 'test/fixtures/all2.json', 436, 420 ]
+380 silly gunzTarPerm extractEntry test/fixtures/env.json
+381 silly gunzTarPerm modified mode [ 'test/fixtures/env.json', 436, 420 ]
+382 silly gunzTarPerm extractEntry test/bash/README.md
+383 silly gunzTarPerm modified mode [ 'test/bash/README.md', 436, 420 ]
+384 silly gunzTarPerm extractEntry test/bash/watch.sh
+385 silly gunzTarPerm modified mode [ 'test/bash/watch.sh', 436, 420 ]
+386 silly gunzTarPerm extractEntry test/bash/cli.sh
+387 silly gunzTarPerm modified mode [ 'test/bash/cli.sh', 509, 493 ]
+388 silly gunzTarPerm extractEntry test/bash/cli2.sh
+389 silly gunzTarPerm modified mode [ 'test/bash/cli2.sh', 509, 493 ]
+390 silly gunzTarPerm extractEntry test/bash/env-refresh.sh
+391 silly gunzTarPerm modified mode [ 'test/bash/env-refresh.sh', 436, 420 ]
+392 silly gunzTarPerm extractEntry test/bash/fork.sh
+393 silly gunzTarPerm modified mode [ 'test/bash/fork.sh', 436, 420 ]
+394 silly gunzTarPerm extractEntry test/bash/gracefulReload.sh
+395 silly gunzTarPerm modified mode [ 'test/bash/gracefulReload.sh', 436, 420 ]
+396 silly gunzTarPerm extractEntry test/bash/gracefulReload2.sh
+397 silly gunzTarPerm modified mode [ 'test/bash/gracefulReload2.sh', 436, 420 ]
+398 silly gunzTarPerm extractEntry test/bash/gracefulReload3.sh
+399 silly gunzTarPerm modified mode [ 'test/bash/gracefulReload3.sh', 436, 420 ]
+400 silly gunzTarPerm extractEntry test/bash/harmony.sh
+401 silly gunzTarPerm modified mode [ 'test/bash/harmony.sh', 436, 420 ]
+402 silly gunzTarPerm extractEntry test/bash/include.sh
+403 silly gunzTarPerm modified mode [ 'test/bash/include.sh', 436, 420 ]
+404 silly gunzTarPerm extractEntry test/bash/cli-ux.sh
+405 silly gunzTarPerm modified mode [ 'test/bash/cli-ux.sh', 436, 420 ]
+406 silly gunzTarPerm extractEntry test/bash/interact.sh
+407 silly gunzTarPerm modified mode [ 'test/bash/interact.sh', 436, 420 ]
+408 silly gunzTarPerm extractEntry test/bash/json_file.sh
+409 silly gunzTarPerm modified mode [ 'test/bash/json_file.sh', 436, 420 ]
+410 silly gunzTarPerm extractEntry test/bash/log-custom.sh
+411 silly gunzTarPerm modified mode [ 'test/bash/log-custom.sh', 436, 420 ]
+412 silly gunzTarPerm extractEntry test/bash/log-reload.sh
+413 silly gunzTarPerm modified mode [ 'test/bash/log-reload.sh', 436, 420 ]
+414 silly gunzTarPerm extractEntry test/bash/misc.sh
+415 silly gunzTarPerm modified mode [ 'test/bash/misc.sh', 436, 420 ]
+416 silly gunzTarPerm extractEntry test/bash/reload.sh
+417 silly gunzTarPerm modified mode [ 'test/bash/reload.sh', 436, 420 ]
+418 silly gunzTarPerm extractEntry test/bash/reset.sh
+419 silly gunzTarPerm modified mode [ 'test/bash/reset.sh', 436, 420 ]
+420 silly gunzTarPerm extractEntry test/bash/right-exit-code.sh
+421 silly gunzTarPerm modified mode [ 'test/bash/right-exit-code.sh', 436, 420 ]
+422 silly gunzTarPerm extractEntry test/bash/signal.sh
+423 silly gunzTarPerm modified mode [ 'test/bash/signal.sh', 436, 420 ]
+424 silly gunzTarPerm extractEntry test/bash/startOrX.sh
+425 silly gunzTarPerm modified mode [ 'test/bash/startOrX.sh', 436, 420 ]
+426 silly gunzTarPerm extractEntry test/bash/infinite_loop.sh
+427 silly gunzTarPerm modified mode [ 'test/bash/infinite_loop.sh', 436, 420 ]
+428 silly gunzTarPerm extractEntry test/index.sh
+429 silly gunzTarPerm modified mode [ 'test/index.sh', 436, 420 ]
+430 silly gunzTarPerm extractEntry test/interface/bus.spec.mocha.js
+431 silly gunzTarPerm modified mode [ 'test/interface/bus.spec.mocha.js', 436, 420 ]
+432 silly gunzTarPerm extractEntry test/interface/interactor.daemonizer.mocha.js
+433 silly gunzTarPerm modified mode [ 'test/interface/interactor.daemonizer.mocha.js', 436, 420 ]
+434 silly gunzTarPerm extractEntry test/interface/fixtures/http:transaction.js
+435 silly gunzTarPerm modified mode [ 'test/interface/fixtures/http:transaction.js', 436, 420 ]
+436 silly gunzTarPerm extractEntry test/interface/fixtures/human:event.js
+437 silly gunzTarPerm modified mode [ 'test/interface/fixtures/human:event.js', 436, 420 ]
+438 silly gunzTarPerm extractEntry test/interface/fixtures/log:out.js
+439 silly gunzTarPerm modified mode [ 'test/interface/fixtures/log:out.js', 436, 420 ]
+440 silly gunzTarPerm extractEntry test/interface/fixtures/process:exception.js
+441 silly gunzTarPerm modified mode [ 'test/interface/fixtures/process:exception.js', 436, 420 ]
+442 silly gunzTarPerm extractEntry test/main.sh
+443 silly gunzTarPerm modified mode [ 'test/main.sh', 436, 420 ]
+444 silly gunzTarPerm extractEntry test/mocha.opts
+445 silly gunzTarPerm modified mode [ 'test/mocha.opts', 436, 420 ]
+446 silly gunzTarPerm extractEntry test/helpers/apps.js
+447 silly gunzTarPerm modified mode [ 'test/helpers/apps.js', 436, 420 ]
+448 silly gunzTarPerm extractEntry test/helpers/plan.js
+449 silly gunzTarPerm modified mode [ 'test/helpers/plan.js', 436, 420 ]
+450 info preinstall pm2@0.11.1
+451 verbose unsafe-perm in lifecycle false
+452 info pm2@0.11.1 Failed to exec preinstall script
+453 verbose unlock done using /home/fan/.npm/_locks/pm2-d247c27dec6aa07b.lock for /usr/local/lib/node_modules/pm2
+454 verbose stack Error: pm2@0.11.1 preinstall: `bash ./scripts/preinstall.sh`
+454 verbose stack Exit status 1
+454 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:212:16)
+454 verbose stack     at ChildProcess.emit (events.js:98:17)
+454 verbose stack     at maybeClose (child_process.js:756:16)
+454 verbose stack     at Process.ChildProcess._handle.onexit (child_process.js:823:5)
+455 verbose pkgid pm2@0.11.1
+456 verbose cwd /home/fan/code/fand3
+457 error Linux 3.13.0-24-generic
+458 error argv "node" "/usr/local/bin/npm" "install" "-g" "pm2"
+459 error node v0.10.33
+460 error npm  v2.1.6
+461 error code ELIFECYCLE
+462 error pm2@0.11.1 preinstall: `bash ./scripts/preinstall.sh`
+462 error Exit status 1
+463 error Failed at the pm2@0.11.1 preinstall script.
+463 error This is most likely a problem with the pm2 package,
+463 error not with npm itself.
+463 error Tell the author that this fails on your system:
+463 error     bash ./scripts/preinstall.sh
+463 error You can get their info via:
+463 error     npm owner ls pm2
+463 error There is likely additional logging output above.
+464 verbose exit [ 1, true ]
+465 verbose unbuild lib/node_modules/pm2
+466 info preuninstall pm2@0.11.1
+467 info uninstall pm2@0.11.1
+468 verbose unbuild rmStuff pm2@0.11.1 from /usr/local/lib/node_modules
+469 verbose /usr/local/bin,[object Object] binRoot
+470 verbose gentlyRm verifying that /usr/local/lib/node_modules/pm2 is managed by npm
+471 silly cacheAndTest /usr/local/lib/node_modules/pm2 is inside /usr/local/lib/node_modules
+472 silly gentlyRm /usr/local/lib/node_modules/pm2 is managed by npm
+473 silly gentlyRm /usr/local/bin/pm2 is not under /usr/local/lib/node_modules/pm2
+474 silly gentlyRm checking to see if /usr/local/bin/pm2 is a link
+475 info postuninstall pm2@0.11.1
+476 verbose gentlyRm vacuuming /usr/local/lib/node_modules/pm2
+477 silly gentlyRm purging /usr/local/lib/node_modules/pm2
+478 silly gentlyRm quitting because other entries in /usr/local/lib/node_modules
