@@ -1,0 +1,22 @@
+Error: Bad Request
+    at SendStream.error (/home/fan/code/fand3/node_modules/express/node_modules/send/index.js:239:16)
+    at SendStream.pipe (/home/fan/code/fand3/node_modules/express/node_modules/send/index.js:411:32)
+    at serveStatic (/home/fan/code/fand3/node_modules/express/node_modules/serve-static/index.js:107:12)
+    at Layer.handle [as handle_request] (/home/fan/code/fand3/node_modules/express/lib/router/layer.js:82:5)
+    at trim_prefix (/home/fan/code/fand3/node_modules/express/lib/router/index.js:270:13)
+    at /home/fan/code/fand3/node_modules/express/lib/router/index.js:237:9
+    at Function.proto.process_params (/home/fan/code/fand3/node_modules/express/lib/router/index.js:312:12)
+    at /home/fan/code/fand3/node_modules/express/lib/router/index.js:228:12
+    at Function.match_layer (/home/fan/code/fand3/node_modules/express/lib/router/index.js:295:3)
+    at next (/home/fan/code/fand3/node_modules/express/lib/router/index.js:189:10)
+Error: Bad Request
+    at SendStream.error (/home/fan/code/fand3/node_modules/express/node_modules/send/index.js:239:16)
+    at SendStream.pipe (/home/fan/code/fand3/node_modules/express/node_modules/send/index.js:411:32)
+    at serveStatic (/home/fan/code/fand3/node_modules/express/node_modules/serve-static/index.js:107:12)
+    at Layer.handle [as handle_request] (/home/fan/code/fand3/node_modules/express/lib/router/layer.js:82:5)
+    at trim_prefix (/home/fan/code/fand3/node_modules/express/lib/router/index.js:270:13)
+    at /home/fan/code/fand3/node_modules/express/lib/router/index.js:237:9
+    at Function.proto.process_params (/home/fan/code/fand3/node_modules/express/lib/router/index.js:312:12)
+    at /home/fan/code/fand3/node_modules/express/lib/router/index.js:228:12
+    at Function.match_layer (/home/fan/code/fand3/node_modules/express/lib/router/index.js:295:3)
+    at next (/home/fan/code/fand3/node_modules/express/lib/router/index.js:189:10)
