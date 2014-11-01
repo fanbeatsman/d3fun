@@ -1,5 +1,7 @@
 var fields;
-
+	function send(){
+	var name = document.getElementById('username').value;
+}
 fields = function(){
 	var currentTime, hour, minute, second;
 	currentTime = new Date();
@@ -32,7 +34,7 @@ scaleMins = d3.scale.linear().domain([0, 59 + 59/60]).range([0, 2 * pi]);
 scaleHours = d3.scale.linear().domain([0, 11 + 59/60]).range([0, 2 * pi]);
 
 var vis, clockGroup;
-
+var data =[4,5,66,7,88]
 vis = d3.selectAll(".chart")
   .append("svg:svg")
   .attr("width", width)
@@ -41,7 +43,7 @@ vis = d3.selectAll(".chart")
 clockGroup = vis.append("svg:g")
   .attr("transform", "translate(" + offSetX + "," + offSetY + ")");
 
-clockGroup.append("svg:circle")
+clockGroup.append("svg:circle")	
   .attr("r", 80).attr("fill", "none")
   .attr("class", "clock outercircle")
   .attr("stroke", "black")
@@ -51,8 +53,19 @@ clockGroup.append("svg:circle")
   .attr("r", 4)
   .attr("fill", "black")
   .attr("class", "clock innercircle");
-  
+
+
+d3.select(".barchart")
+.selectAll("div")
+.data(data)
+.enter().append("div")
+.style("width",function(d){return d*10+"px";})
+.text(function(d){return d;});
 $(function(){
+
+
+	var name=document.getElementById('username').value;
+
 	console.log("QRT");
 });
 
