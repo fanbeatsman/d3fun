@@ -1,8 +1,5 @@
-var fields;
-	function send(){
-	var name = document.getElementById('username').value;
-}
-fields = function(){
+
+var fields = function(){
 	var currentTime, hour, minute, second;
 	currentTime = new Date();
 	second = currentTime.getSeconds();
@@ -62,10 +59,6 @@ d3.select(".barchart")
 .style("width",function(d){return d*10+"px";})
 .text(function(d){return d;});
 $(function(){
-
-
-	var name=document.getElementById('username').value;
-
 	console.log("QRT");
 });
 
