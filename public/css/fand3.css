@@ -1,0 +1,16 @@
+.centered{
+	  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -21.5%);
+}
+
+.picture
+
+	{
+		postion:absolute;
+    width: 200px;
+    height: 200px;
+    background: url(/img/pikachu1.jpg);
+    border-radius: 50%; /*the magic*/
+}

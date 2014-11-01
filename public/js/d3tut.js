@@ -52,7 +52,9 @@ clockGroup.append("svg:circle")
   .attr("class", "clock innercircle");
 
 
+
 var render = function(data){
+	
 	var hourArc, minuteArc, secondArc;
 	clockGroup.selectAll(".clockhand").remove();
 	secondArc=d3.svg.arc()
@@ -111,11 +113,13 @@ var render = function(data){
 	})
 	.attr("fill","none");
 
+
 };
 
 setInterval(function(){
 	var data;
 	data = fields();
+	console.log(data);
 	return render(data);
 },1000);
 
