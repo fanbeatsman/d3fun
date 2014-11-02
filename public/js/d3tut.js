@@ -54,7 +54,18 @@ clockGroup.append("svg:circle")
 
 
 var render = function(data){
-	
+	clockGroup.selectAll(".clockRadial").remove();
+
+	clockGroup.selectAll(".clockRadial")
+	.data(data)
+	.enter()
+	.append("svg:circle").attr("class","clockRadial") //am i remaking circles all the time?
+	.attr("r",70)
+	.attr("fill","none")
+	.attr("stroke","orange")
+	.attr("stroke-width", 10);
+
+
 	var hourArc, minuteArc, secondArc;
 	clockGroup.selectAll(".clockhand").remove();
 	secondArc=d3.svg.arc()
@@ -119,7 +130,6 @@ var render = function(data){
 setInterval(function(){
 	var data;
 	data = fields();
-	console.log(data);
 	return render(data);
 },1000);
 

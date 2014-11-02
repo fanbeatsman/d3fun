@@ -14,3 +14,55 @@
     background: url(/img/pikachu1.jpg);
     border-radius: 50%; /*the magic*/
 }
+
+.barchart{
+	position:absolute;
+	float:left;
+	z-index:-1;
+	top:100;
+	left:0;
+}
+
+.barchart rect {
+  fill: steelblue;
+}
+
+.barchart text {
+  fill: white;
+  font: 10px sans-serif;
+  text-anchor: end;
+}
+
+
+path {
+  fill-rule: evenodd;
+  fill: #aaa;
+  fill-opacity: .7;
+  stroke: #666;
+  stroke-width: 1.5px;
+}
+
+
+  #field {
+  	top:0;
+  	left:15;
+    position: absolute;
+    height: 300px;
+    width:50%;
+ 
+    z-index:-1;
+  }
+  #ball{
+  	z-index:-1;
+    position: absolute;
+    right: 0;
+    bottom: 50%;
+    width: 1em;
+    height: 1em;
+    border-radius: 0.5em;
+  }
+  #ball { background: red; }
+  #ball2 {  z-index:-1;
+    position: absolute;
+    bottom: 50%;
+  				}
