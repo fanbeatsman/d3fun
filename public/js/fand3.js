@@ -1,6 +1,14 @@
 var width = "100%";
 var height = 400;
 var pi = Math.PI;
+function getRandomColor() {
+    var letters = '0123456789ABCDEF'.split('');
+    var color = '#';
+    for (var i = 0; i < 6; i++ ) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
 //barchart data global
 
 
@@ -36,13 +44,12 @@ var offSetX = $(".mychart").width()/2;
 
 var gaugeGroup = chart.append("svg:g")
   .attr("transform", "translate(" + offSetX + "," + offSetY + ")");
-
- 
- var nova=gaugeGroup.append("svg:circle")	
-  .attr("r", 170).attr("fill", "none")
+var nova=gaugeGroup.append("circle")	
+  .attr("r", 700).attr("fill", "none")
   .attr("class", "gauge1 outerGauge ")
   .attr("stroke", "green")
-  .attr("stroke-width", 10); 
+  .attr("stroke-width", 8);
+
 
  /*gaugeGroup.append("svg:circle")	
   .attr("r", 160).attr("fill", "none")
@@ -182,7 +189,8 @@ function addstats(stat1,stat2){
 }
 function removecurrent(){
 
-  
+  nova.transition()
+  .attr('r',0);
 
 	var begone = d3.selectAll("path");
 	begone.transition()
@@ -197,7 +205,7 @@ function removecurrent(){
   var field = document.getElementById("field");
   var ball = document.getElementById("ball");
   var ball2 = document.getElementById("ball2");
-
+$("#ball").css("background",getRandomColor());
   var maxX = field.clientWidth - ball.offsetWidth;
   var maxY = field.clientHeight - ball.offsetHeight;
 
@@ -206,15 +214,16 @@ function removecurrent(){
 
   var start = null;
 
+  
   function step(timestamp)
   {
 
     var progress, x, y;
     if(start === null) start = timestamp;
 
-    progress = (timestamp - start) / duration / 500; // percent
+    progress = (timestamp - start) / duration / 300; // percent
 
-    x = progress *progress*progress*progress* maxX/gridSize; // x = ƒ(t)
+    x = progress *progress*progress* maxX/gridSize; // x = ƒ(t)
     y = 1 * Math.sin(x+9)-0.5; // y = ƒ(x)
 
 
@@ -237,18 +246,28 @@ function removecurrent(){
 
 }
 
+/*var ballField = d3.select("#field").append("svg:svg");
 
+var ballFieldSvg=ballField.append("svg:g")
+  .attr("transform", "translate(" + offSetX + "," + offSetY + ")");
+ 
+ var nova=ballFieldSvg.append("circle")	
+  .attr("r", 700).attr("fill", "none")
+  .attr("class", "gauge1 outerGauge ")
+  .attr("stroke", "green")
+  .attr("stroke-width", 8); */
 
 $(function(){
 		renderbar(data);
 render(myFields(Math.random()*100,Math.random()*100));	
-$('.mychart').prepend('<img id="pikachu" class="centered picture"src="/img/pikachu1.png" />');
+$('.mychart').append('<img id="pikachu" class="centered picture"src="/img/pikachu1.png" />');
+$("#pikachu").css("transform", "translate(" + offSetX + "," + offSetY + ")");
 $("#pikachu").click(function(){
 
 	removecurrent();
 	setTimeout(function(){
 		addstats(6,9);
-	},1900);
+	},900);
 	
 	console.log("stop clicking me");
 }).hover(function(){

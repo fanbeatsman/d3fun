@@ -61,7 +61,7 @@ path {
     height: 1em;
     border-radius: 0.5em;
   }
-  #ball { background: red; }
+  /*#ball { background: red; }*/
   #ball2 {  z-index:-1;
     position: absolute;
     bottom: 50%;
